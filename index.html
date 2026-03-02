@@ -42,6 +42,7 @@
 		<imagetarget id='rmn' src='targets/rmn.png'></imagetarget>
 		<imagetarget id='m-color-01' src='targets/m-color-01.png'></imagetarget>
 		<imagetarget id='bg3_logo' src='targets/bg3_logo.png'></imagetarget>
+		<imagetarget id='bill_cipher' src='targets/bill_cipher.png'></imagetarget>
 
     <video id="webcam-video" muted autoplay playsinline style="width:1px;position:absolute"></video>
     <canvas id="video-canvas" style="width:100%; height:100%; object-fit:cover; position:absolute"></canvas>
@@ -80,7 +81,7 @@
     </div>
     <script src="arcamera.js" type="text/javascript"></script>
     <script src="itracker.js" type="text/javascript"></script>
-    <script src="Build/Shine XR.loader.js"></script>
+    <script src="Build/WebAR20260302.loader.js"></script>
     <script>
             var initialize = async() =>{
                 var unityCanvas = document.querySelector("#unity-canvas");
@@ -112,9 +113,9 @@
                 
                 document.getElementById("startARDiv").style.display = "none";
                 createUnityInstance(document.querySelector("#unity-canvas"), {
-                    dataUrl: "Build/Shine XR.data",
-                    frameworkUrl: "Build/Shine XR.framework.js",
-                    codeUrl: "Build/Shine XR.wasm",
+                    dataUrl: "Build/WebAR20260302.data",
+                    frameworkUrl: "Build/WebAR20260302.framework.js",
+                    codeUrl: "Build/WebAR20260302.wasm",
                     streamingAssetsUrl: "StreamingAssets",
                     companyName: "DefaultCompany",
                     productName: "XR_Test",
